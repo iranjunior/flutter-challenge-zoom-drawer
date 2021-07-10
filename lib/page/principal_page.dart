@@ -15,6 +15,7 @@ class PrincipalPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
+            key: Key('drawer_button'),
             onPressed: () {
               // verifica se a animação completou para reverter
               if (_controller.status == AnimationStatus.completed) {
